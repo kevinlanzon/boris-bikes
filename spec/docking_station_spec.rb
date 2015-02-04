@@ -1,8 +1,11 @@
 require 'docking_station'
+require_relative '../lib/bike.rb'
+
 
 describe DockingStation do
 		
-		let(:bike) {Bike.new}
+		let(:bike){double :bike, {broken?: false}}
+		let(:broken_bike){double :bike, {broken?: true}}
 		let(:station) {DockingStation.new}
 	
 	it 'should accept a bike' do
@@ -23,6 +26,13 @@ describe DockingStation do
 		20.times{station.dock(bike)}
 		expect{station.dock(bike)}.to raise_error 'the station is full'
 	end
+
+	it 'should give us a list of available bikes' do
+		station.dock(bike)
+		station.dock(broken_bike)
+		expect(station.available_bikes).to eq([bike])
+	end
+
 
 end
 
