@@ -9,8 +9,9 @@ class DockingStation
 	end
 
 	def dock(bike)
-		raise 'the station is full' if full?
+		raise 'the station is full' if full? 
 		@bikes << bike
+		
 	end
 
 	def bike_count
@@ -27,7 +28,8 @@ class DockingStation
 
 	def available_bikes
 		@bikes.reject {|bike| bike.broken? }
-
 	end 
+
+	
 
 end
