@@ -12,7 +12,6 @@ module BikeContainer
 		@capacity ||= DEFAULT_CAPACITY
 	end
 		
-
 	def dock(bike)
 		raise 'the BikeContainer is full' if full? 
 		bikes << bike	
@@ -33,4 +32,5 @@ module BikeContainer
 	def available_bikes
 		@bikes.reject {|bike| bike.broken? }
 	end 
+
 end

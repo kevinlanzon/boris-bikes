@@ -15,11 +15,12 @@
 - should give us a list of available bikes
 
 #Garage
-- 
+- should dock broken bikes from the van
+- should fix broken bikes
+- should release fixed bikes to the van
 
 #Van
-- van must be able to accept the bikes at the source and release them at the destination.
-- limit on the capacity
+- Van can get the broken bikes from the station.
 - moving broken bikes from the stations to the garage.
 - Once they are fixed, the van moves them back to the stations.
 
