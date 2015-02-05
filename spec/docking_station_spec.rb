@@ -4,17 +4,12 @@ require_relative '../lib/bike.rb'
 
 describe DockingStation do
 		
-		let(:bike){double :bike, {broken?: false}}
-		let(:broken_bike){double :bike, {broken?: true}}
-		let(:station) {DockingStation.new}
+		
+		let(:station) {DockingStation.new(capacity: 123)}
 	
-
-	it 'should give us a list of available bikes' do
-		station.dock(bike)
-		station.dock(broken_bike)
-		expect(station.available_bikes).to eq([bike])
+	it 'should allow setting default capacity on initialising' do
+	expect(station.capacity).to eq(123)
 	end
-
 
 end
 

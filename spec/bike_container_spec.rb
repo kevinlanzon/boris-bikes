@@ -3,7 +3,8 @@ require './lib/bike_container'
 class ContainerHolder; include BikeContainer; end
 
 describe BikeContainer do
-	let(:bike){Bike.new}
+	let(:bike){double :bike, {broken?: false}}
+	let(:broken_bike){double :bike, {broken?: true}}
 	let(:holder){ContainerHolder.new}
 
 	it 'should accept a bike' do
@@ -25,7 +26,10 @@ describe BikeContainer do
 		expect{holder.dock(bike)}.to raise_error 'the BikeContainer is full'
 	end
 
-
-
+	it 'should give us a list of available bikes' do
+		holder.dock(bike)
+		holder.dock(broken_bike)
+		expect(holder.available_bikes).to eq([bike])
+	end
 
 end
