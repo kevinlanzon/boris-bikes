@@ -1,6 +1,6 @@
 module BikeContainer
 
-	attr_accessor :capacity
+	attr_accessor(:capacity)
 
 	DEFAULT_CAPACITY = 20
 
@@ -8,12 +8,12 @@ module BikeContainer
 		@bikes ||=[]
 	end
 	
-	def capacity 
+	def capacity
 		@capacity ||= DEFAULT_CAPACITY
 	end
 		
 	def dock(bike)
-		raise 'the BikeContainer is full' if full? 
+		raise 'Station is full' if full? 
 		bikes << bike	
 	end
 
@@ -30,7 +30,15 @@ module BikeContainer
 	end
 
 	def available_bikes
-		@bikes.reject {|bike| bike.broken? }
+		@bikes.reject { |bike| bike.broken? }
 	end 
+
+	def broken_bikes
+		bikes.select { |bike| bike.broken? }
+	end
+
+	def fixed_bikes
+		bikes.select { |bike| bike.fix!}
+	end		
 
 end
