@@ -1,11 +1,11 @@
 require_relative 'bike_container'
 
 class Van
-	include BikeContainer 
+  include BikeContainer
 
-	def initialize(specs = {})
-		@capacity = specs.fetch(:capacity, capacity)
-		@broken
-	end
+  def initialize(specs = {})
+    @capacity = specs.fetch(:capacity, capacity)
+    @broken
+  end
 
-end	
+end
