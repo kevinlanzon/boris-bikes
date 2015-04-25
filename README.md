@@ -1,4 +1,5 @@
 [![Code Climate](https://codeclimate.com/github/kevinlanzon/boris-bikes/badges/gpa.svg)](https://codeclimate.com/github/kevinlanzon/boris-bikes)
+[![Build Status](https://travis-ci.org/kevinlanzon/boris-bikes.svg?branch=master)](https://travis-ci.org/kevinlanzon/boris-bikes)
 Boris Bikes
 ======================
 
