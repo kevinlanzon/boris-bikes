@@ -21,5 +21,4 @@ describe Van do
     van.dock(fixed_bike)
     expect(van.fixed_bikes.count).to eq(1)
   end
-
 end

@@ -40,5 +40,4 @@ module BikeContainer
   def fixed_bikes
     bikes.select { |bike| bike.fix! }
   end
-
 end

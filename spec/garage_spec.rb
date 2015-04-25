@@ -16,5 +16,4 @@ describe Garage do
     garage.dock(fixed_bike)
     expect(garage.fixed_bikes.count).to eq(1)
   end
-
 end

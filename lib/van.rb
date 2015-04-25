@@ -7,5 +7,4 @@ class Van
     @capacity = specs.fetch(:capacity, capacity)
     @broken
   end
-
 end
