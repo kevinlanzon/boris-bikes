@@ -1,4 +1,4 @@
- Boris Bikes
+ Boris Bikes [![Code Climate](https://codeclimate.com/github/kevinlanzon/boris-bikes/badges/gpa.svg)](https://codeclimate.com/github/kevinlanzon/boris-bikes)
 ======================
 
 Week 1 at Makers Academy.
