@@ -1,7 +1,8 @@
- Boris Bikes [![Code Climate](https://codeclimate.com/github/kevinlanzon/boris-bikes/badges/gpa.svg)](https://codeclimate.com/github/kevinlanzon/boris-bikes)
+[![Code Climate](https://codeclimate.com/github/kevinlanzon/boris-bikes/badges/gpa.svg)](https://codeclimate.com/github/kevinlanzon/boris-bikes)
+Boris Bikes
 ======================
 
-Week 1 at Makers Academy.
+Week 1 at Makers Academy - Pair programmed with [Thomas](https://github.com/TStrothjohann).
 
 The goal of this project is to introduce you to:
 
