@@ -17,5 +17,4 @@ class Bike
     @broken = true
     self
   end
-
 end
