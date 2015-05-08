@@ -3,7 +3,7 @@
 Boris Bikes
 ======================
 
-Week 1 at Makers Academy - Pair programmed with [Thomas](https://github.com/TStrothjohann).
+Week 1 at Makers Academy - Paired with [Thomas](https://github.com/TStrothjohann).
 
 The goal of this project is to introduce you to:
 
